@@ -21,7 +21,7 @@ def avv_func():
             avvHoursDict[element] = avvHoursDict[element] + ((60 - tempMinIn + tempMinOut) * 60)
             avvHoursDict[element] = avvHoursDict[element] + (60 - tempSecIn + tempSecOut)
         elif tempHourOut > tempHourIn:
-            avvHoursDict[element] = avvHoursDict[element] + (24 - tempHourIn) * 3600
+            avvHoursDict[element] = avvHoursDict[element] + (tempHourOut - tempHourIn) * 3600
             avvHoursDict[element] = avvHoursDict[element] + ((60 - tempMinIn + tempMinOut) * 60)
             avvHoursDict[element] = avvHoursDict[element] + (60 - tempSecIn + tempSecOut)
         elif tempHourIn == tempHourOut:
