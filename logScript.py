@@ -1,5 +1,5 @@
 # func calculates average hours for every employee and save it in avvHourDict dictionary
-def avv_func(funcDict):
+def avv_func():
     global avvHoursDict, idList
 
     # loop runs on every employee
