@@ -38,7 +38,7 @@ def op_work_hours(counter):
         tempHour = round((avvHoursDict[element] / counter) / 3600)
         tempMin = round(((avvHoursDict[element] / counter) % 3600) / 60)
         tempSec = round(((avvHoursDict[element] / counter) % 3600) % 60)
-        print(element, '{:02d}:{:02d}:{:02d}'.format(tempHour, tempMin, tempSec))
+        print('ID:', element, '{:02d}:{:02d}:{:02d}'.format(tempHour, tempMin, tempSec))
 
 
 # connecting log file
